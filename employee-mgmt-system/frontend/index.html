@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PeopleDesk — Internal Employee Management</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- LOGIN VIEW -->
+  <div id="login-view" class="login-screen">
+    <div class="login-card">
+      <div class="brand">
+        <span class="brand-mark">PD</span>
+        <span class="brand-name">PeopleDesk</span>
+      </div>
+      <p class="login-sub">Internal Employee Management System</p>
+      <form id="login-form">
+        <label>Email
+          <input type="email" id="login-email" required placeholder="you@company.test" />
+        </label>
+        <label>Password
+          <input type="password" id="login-password" required placeholder="••••••••" />
+        </label>
+        <button type="submit" class="btn btn-primary btn-full">Sign in</button>
+        <p id="login-error" class="form-error" hidden></p>
+      </form>
+      <div class="demo-creds">
+        <p><strong>Demo accounts</strong> (seeded data):</p>
+        <ul>
+          <li>Admin — admin@cruvels.test / Admin@123</li>
+          <li>Manager — manager@cruvels.test / Manager@123</li>
+          <li>Employee — harshita@cruvels.test / Employee@123</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- APP SHELL -->
+  <div id="app-shell" class="app-shell" hidden>
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="brand-mark">PD</span>
+        <span class="brand-name">PeopleDesk</span>
+      </div>
+      <nav id="nav-links" class="nav-links"></nav>
+      <div class="sidebar-footer">
+        <div id="user-chip" class="user-chip"></div>
+        <button id="logout-btn" class="btn btn-ghost btn-full">Log out</button>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <h1 id="page-title">Dashboard</h1>
+        <div id="topbar-actions"></div>
+      </header>
+      <div id="view-root" class="view-root"></div>
+    </main>
+  </div>
+
+  <!-- Modal root for forms (add employee, add department, request leave, etc.) -->
+  <div id="modal-root"></div>
+
+  <div id="toast-root" class="toast-root"></div>
+
+  <script src="js/api.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/views/dashboard.js"></script>
+  <script src="js/views/employees.js"></script>
+  <script src="js/views/attendance.js"></script>
+  <script src="js/views/leave.js"></script>
+  <script src="js/views/departments.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
