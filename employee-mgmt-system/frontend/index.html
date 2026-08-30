@@ -5,9 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>PeopleDesk — Internal Employee Management</title>
 <link rel="stylesheet" href="css/style.css" />
+<script>
+  window.PEOPLEDESK_API_BASE = "https://peopledesk-employee-management-2.onrender.com/api";
+</script>
 </head>
 <body>
-
   <!-- LOGIN VIEW -->
   <div id="login-view" class="login-screen">
     <div class="login-card">
@@ -36,7 +38,6 @@
       </div>
     </div>
   </div>
-
   <!-- APP SHELL -->
   <div id="app-shell" class="app-shell" hidden>
     <aside class="sidebar">
@@ -50,7 +51,6 @@
         <button id="logout-btn" class="btn btn-ghost btn-full">Log out</button>
       </div>
     </aside>
-
     <main class="main-content">
       <header class="topbar">
         <h1 id="page-title">Dashboard</h1>
@@ -59,12 +59,9 @@
       <div id="view-root" class="view-root"></div>
     </main>
   </div>
-
   <!-- Modal root for forms (add employee, add department, request leave, etc.) -->
   <div id="modal-root"></div>
-
   <div id="toast-root" class="toast-root"></div>
-
   <script src="js/api.js"></script>
   <script src="js/ui.js"></script>
   <script src="js/views/dashboard.js"></script>
