@@ -1,12 +1,7 @@
 # PeopleDesk — Internal Employee Management System
 
-**Cruvels Engineering Internship — Technical Assignment, Option D**
-
-A focused MVP for a company's internal HR portal: employee records, attendance,
-and leave request/approval, with role-based dashboards for Admin, Manager, and
-Employee.
-
----
+🔗 **Live App:** https://peopledesk-employee-management.vercel.app
+🔗 **Backend API:** https://peopledesk-employee-management-2.onrender.com
 
 ## 1. Project Description
 
